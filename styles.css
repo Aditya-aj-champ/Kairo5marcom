@@ -9,6 +9,7 @@
 
 /* Base Styles */
 .overlay {
+  
   height: 0%;
   width: 100%;
   position: fixed;
@@ -200,8 +201,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
- padding: 0 60px;
+ padding: 0 10px;
   flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  
 }
 .left-text h1{
   padding-left: 15px;
@@ -211,28 +213,43 @@
   font-weight: 600;
 }
 .title{
-  font-size: 25rem !important;
+  font-size: 12rem !important;
+  line-height:1.2;
+  font-weight: 600;
+  
 }
 .right-section video {
   width: 80%;
+  height: 120px;
+  border-radius: 5px;
   
+
+  
+}
+
+.first-viedo{
+  display:flex;
+  justify-content: space-around !important;
+  align-items: center !important;
 }
 .subtitle{
   margin-top: 15px;
-  font-size: 2rem;
-  color: #121212;
+  font-size: 1rem;
+  color: #fd484a;
   line-height: normal;
+ 
+  
 }
 .center-image img {
   width: 40%; 
   /* height: 100px; */
 }
 
-/* @media (min-width: 1200px) {
+@media (min-width: 1200px) {
   .container-home {
-    width: 1400px !important;
+    width: 1340px !important;
   }
-} */
+}
 
 @media (max-width: 1199px) {
   .container-home {
@@ -241,6 +258,7 @@
 
   .title {
     font-size: 15rem !important; /* Reduce title size */
+   
   }
 
   .subtitle {
@@ -326,7 +344,8 @@
 }
 
 .about-image {
-  width: 300px;
+  width: 380px;
+  height: 350px;
   border-radius: 10px;
   object-fit: cover;
 }
