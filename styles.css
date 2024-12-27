@@ -176,7 +176,6 @@
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* ---------------------------bg-gif------------------------- */
 
 /* ----------------------hr--------------------- */
 .hr {
@@ -607,7 +606,7 @@
 
 .insta360-header video {
   width: 15%;
-  border-radius: 5px;
+  border-radius: 8px;
   position: absolute;
   top: 80%;
   right: 50px;
@@ -652,16 +651,37 @@
   margin-top: 20px;
 }
 
+@media (max-width: 768px) {
+  .insta360-content{
+    width: 100% !important;
+    margin-left:0;
+    padding: 20px;
+    align-items: center;
+    margin-top: 10px;
+  }
+ 
+  .insta360-header video {
+    width: 40% !important;
+   right: 30px;
+   
+    transform: translate(-50%);
+    border-radius: 5px;
+   position:absolute;
+  
+    
+  }
+}
+
 /* ------------------------------ Strategy&Consulting---------------------------- */
 .insta360-content1 {
   width: 100%;
-  padding: 30px;
+  padding: 0 30px;
   text-align: center;
   background-color: #121212;
 }
 
 .Strategy-Consulting-img img {
-  width: 38% !important;
+  width: 30%;
 }
 
 /* ---------button------- */
@@ -742,4 +762,85 @@
 .Our-Approach-data-card p {
   font-size: 1.2rem;
   font-weight:400;
+}
+
+@media (max-width: 768px) {
+  .insta360-navbar{
+    display: none;
+  }
+  .insta360-content1{
+    padding:0;
+  }
+  .Strategy-Consulting-img img {
+    width: 70%;
+  }
+  .button-container {
+    
+    width: 80%;
+    height: 30px;
+    /* Button height */
+    border: 1px solid #fff;
+    /* White border */
+    border-radius: 30px;
+    overflow: hidden;
+    /* Ensures animation stays within button */
+    background-color: #fff;
+    
+  }
+
+  
+.button-content {
+ 
+  
+  width: 40%;
+  height: 100%;
+  
+  font-weight:400;
+  font-size: 20px;
+}
+
+.Strategy-Consulting-p{
+  width: 80%;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+.Our-Approach-data{
+ 
+  flex-direction: column;
+  width: 100% !important;
+  align-items: center;
+  justify-content: center;
+}
+.Our-Approach-data-card{
+  font-weight: 400 !important;
+  font-size: 1rem;
+  width: 90%;;
+}
+ .Our-Approach-data-card img {
+    width: 20% !important;
+    margin-bottom: 20px;
+  }
+
+  
+  .insta360-header{
+    padding-top: 5px;
+  } 
+  .insta360-header h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    /* margin: 20px 0 20px 0; */
+   
+  }
+
+  .video-strategy{
+    width: 40% !important;
+   
+   margin-top: 20px;
+    border-radius: 5px;
+    position:relative !important;
+  
+    right: 10px !important;
+    transform: translateY(-50%) !important;
+  }
 }
