@@ -389,13 +389,14 @@
   justify-content: center;
   padding: 20px;
   justify-content: space-between;
+  max-width: 1250px !important;
 }
 
 .card {
   background-color: #121212 !important;
   color: white !important;
-  width: 400px;
-  height: 430px !important;
+  width: 370px;
+  height: 390px !important;
   border-radius: 0px !important;
   overflow: hidden;
   text-align: center;
